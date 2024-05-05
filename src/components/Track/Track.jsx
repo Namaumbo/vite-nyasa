@@ -1,14 +1,19 @@
 import "./track.css";
 export default function Track() {
   return (
-    <div className="track-container lg:w-96 relative">
-      <img src="photo2.jpg" alt="artwork" className="w-full" id="artwork" />
+    <div className="track-container lg:w-45 relative ">
+      <img
+        src="photo2.jpg"
+        alt="artwork"
+        className="object-cover h-auto w-full rounded-sm"
+        id="artwork"
+      />
       <div className="overlay absolute inset-0 flex justify-center items-center opacity-0 hover:opacity-100">
-        <img src="play.png" alt="play" className="absolute bottom-20 right-6" />
+        <img src="play.png" alt="play" className="absolute bottom-20 right-6 w-12" />
       </div>
       <div className="flex flex-col text-center ">
-        <span className="text-2xl text-slate-500 font-bolder">Emtee</span>
-        <h4 className="text-xl text-slate-500 font-bold">LOGAN</h4>
+        <span className="text-xl text-slate-500 font-bolder">Emtee</span>
+        <h4 className="text-[13px] text-slate-500 font-bold">LOGAN</h4>
       </div>
     </div>
   );
