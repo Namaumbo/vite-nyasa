@@ -1,8 +1,15 @@
 .track-container {
     position: relative;
     cursor: pointer;
+    padding: 10px;
 }
-
+.track-container:hover{
+   background-color: #616d7d1d;
+   border-radius: 5px;
+}
+#artwork{
+    border: 1px solid #64748B;
+}
 .track-container img {
     display: block;
 }
