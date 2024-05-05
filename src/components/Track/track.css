@@ -1,0 +1,19 @@
+.track-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.track-container img {
+    display: block;
+}
+
+.overlay {
+    opacity: 0.7;
+    position: absolute;
+    background-color: transparent;
+    transition: opacity 0.2s ease;
+}
+
+.track-container:hover .overlay {
+    opacity: 1;
+}
