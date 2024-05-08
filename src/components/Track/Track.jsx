@@ -5,14 +5,14 @@ export default function Track() {
       <img
         src="photo2.jpg"
         alt="artwork"
-        className="object-cover h-auto w-full rounded-sm"
+        className="object-cover h-auto w-full rounded-md shadow-outline"
         id="artwork"
       />
       <div className="overlay absolute inset-0 flex justify-center items-center opacity-0 hover:opacity-100">
         <img
           src="play.png"
           alt="play"
-          className="absolute bottom-20 right-6 w-12"
+          className="absolute bottom-14 right-4 w-12"
         />
       </div>
       <div className="flex flex-col text-center ">
