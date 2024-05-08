@@ -9,11 +9,15 @@ export default function Track() {
         id="artwork"
       />
       <div className="overlay absolute inset-0 flex justify-center items-center opacity-0 hover:opacity-100">
-        <img src="play.png" alt="play" className="absolute bottom-20 right-6 w-12" />
+        <img
+          src="play.png"
+          alt="play"
+          className="absolute bottom-20 right-6 w-12"
+        />
       </div>
       <div className="flex flex-col text-center ">
-        <span className="text-xl text-slate-500 font-bolder">Emtee</span>
-        <h4 className="text-[13px] text-slate-500 font-bold">LOGAN</h4>
+        <span className=" text-gray-200 font-bolder">emtee</span>
+        <h4 className="text-[12px] text-slate-400 font-bold">Logan</h4>
       </div>
     </div>
   );

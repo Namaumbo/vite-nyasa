@@ -4,7 +4,7 @@ import "./sliderStyle.css"
 export default function SliderComponet() {
   return (
     <>
-      <div className="mx-auto grid lg:grid-cols-6 lg:grid-rows-1 md:grid-cols-5 md:grid-rows-1  sm:grid-cols-4 gap-4 sm:grid-rows-1 ">
+      <div className=" mx-auto grid lg:grid-cols-6 lg:grid-rows-1 md:grid-cols-5 md:grid-rows-1  sm:grid-cols-4 gap-4 sm:grid-rows-1 ">
         <Track />
         <Track />
         <Track />

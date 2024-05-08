@@ -12,12 +12,17 @@ const App = () => {
       <div>
         {/* <GreetingComponent/> */}
         <div className="flex">
-          <div className="w-1/4 bg-gray-200">
+          <div className="w-[23%] bg-gray-200">
             <SideBar />
           </div>
-          <div className="w-3/4 ">
-            {" "}
-            <SliderComponet />
+          <div className="w-3/4  pl-5 space-y-3">
+            <div>
+              <div className="flex flex-row justify-between">
+                <h4 className=" tracking-tighter text-2xl font-bold text-gray-200" >NyasaBeats Tracks For You</h4>
+                <p className="text-gray-200">See all</p>
+              </div>
+              <SliderComponet />
+            </div>
           </div>
         </div>
       </div>
