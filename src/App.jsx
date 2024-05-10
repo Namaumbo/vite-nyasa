@@ -10,14 +10,14 @@ const App = () => {
     <>
       <NavBarComponent />
       <div>
-        {/* <GreetingComponent/> */}
         <div className="flex">
-          <div className="w-[23%] bg-[#121212]">
+          <div className="w-[23%] bg-[rgba(13, 17, 23, 0)]  border-[0.5px] border-r-[#2b2b2b] ">
             <SideBar />
           </div>
           <div className="w-3/4  pl-5 space-y-3">
+            <GreetingComponent />
             <div>
-              <div className="flex flex-row justify-between">
+              <div className="flex flex-row justify-between ">
                 <h4 className=" tracking-tighter text-2xl font-bold text-gray-200">
                   NyasaBeats Tracks For You
                 </h4>
@@ -29,7 +29,7 @@ const App = () => {
             </div>
             <div>
               {/* New Releases */}
-              <div className="flex flex-row justify-between">
+              <div className="flex flex-row justify-between px-2">
                 <h4 className=" tracking-tighter text-2xl font-bold text-gray-200">
                   New Releases
                 </h4>

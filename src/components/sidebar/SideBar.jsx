@@ -3,54 +3,102 @@ import * as fiIcons from "react-icons/fi";
 import {
   Tag,
   TagLabel,
-  TagLeftIcon,
-  TagRightIcon,
-  TagCloseButton,
-  Divider
+  Divider,
 } from "@chakra-ui/react";
 export default function SideBar() {
   const links = [
     {
       name: "Home",
-      icon: <ciIcons.CiHome fontSize={20} color="#fff" />,
+      icon: <ciIcons.CiHome fontSize={25} color="#4c566a" />,
       path: "/",
     },
     {
       name: "Albums",
-      icon: <fiIcons.FiDisc fontSize={20} color="#fff" />,
+      icon: <fiIcons.FiDisc fontSize={25} color="#4c566a" />,
       path: "/albums",
     },
     {
       name: "Studios",
-      icon: <fiIcons.FiSpeaker fontSize={20} color="#fff" />,
+      icon: <fiIcons.FiSpeaker fontSize={25} color="#4c566a" />,
       path: "/studios",
     },
     {
       name: "News",
-      icon: <fiIcons.FiPaperclip fontSize={20} color="#fff" />,
+      icon: <fiIcons.FiPaperclip fontSize={25} color="#4c566a" />,
       path: "/newsletter",
     },
   ];
 
-  const genreList = ["Afro-pop", "hip-pop", "pop"];
+  const genreList = [
+    "Afro-pop",
+    "hip-pop",
+    "pop",
+    "gospel",
+    "rock",
+    "reggae",
+    "amapiano",
+    "metal",
+    "RnB",
+    "Mangelengele",
+    "reggaes",
+  ];
+
+  const artists = [
+    "Namadingo",
+    "Eli Njuchi",
+    "Ranken",
+    "Ethel Kamwendo Banda",
+    "Lawi",
+    "Temwa",
+    "Kraizy G",
+    "Gwamba",
+    "Success",
+    "Suffix",
+    "Zenze",
+
+  ]
   return (
     <div className=" max-h-full ">
       <ul className="list-none m-8">
         {links.map((item, index) => (
           <li key={index} className="mb-5 flex flex-row  items-center ">
-            <div className=" pr-2" >{item["icon"]}</div>
-            <div className=" font-bold text-gray-200">{item["name"]}</div>
+            <div className=" pr-5">{item["icon"]}</div>
+            <div className=" font-bold text-[#cad2e0]">{item["name"]}</div>
           </li>
         ))}
       </ul>
 
       <Divider />
       <h4 className="mt-3 ml-2 text-xl text-gray-400">Available Genres</h4>
-      <div className="flex mt-4 ">
+      <div className=" py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500 ">
         {genreList.map((genre) => (
-          <div className="ml-1 p-1">
-          <Tag>{genre}</Tag>
-          </div>
+          <Tag
+            key={genre}
+            variant="solid"
+            colorScheme="blue"
+            size="lg"
+            className="mr-2 mt-3 cursor-pointer"
+          >
+            <TagLabel>{genre}</TagLabel>
+          </Tag>
+        ))}
+      </div>
+
+      <h4 className="mt-3 ml-2 text-xl text-gray-400">
+        People are Listening To..
+      </h4>
+      <div className=" py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500 ">
+        {artists.map((genre) => (
+          <Tag
+            key={genre}
+            variant="solid"
+            colorScheme="orange"
+            size="lg"
+            className="mr-2 mt-3 cursor-pointer"
+          >
+            <TagLabel>{genre}</TagLabel>
+            <fiIcons.FiPlayCircle />
+          </Tag>
         ))}
       </div>
     </div>

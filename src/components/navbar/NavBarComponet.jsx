@@ -8,7 +8,7 @@ export default function NavBarComponent() {
         <input
           type="text"
           placeholder="Search Music,Albums,Artists...."
-          className="  h-12 w-[27rem] pl-3 rounded-3xl bg-[#121212]"
+          className="  h-12 w-[27rem] pl-3 rounded-3xl bg-[#2b2b2b] border-[#2b2b2b]"
         />
       </div>
     </nav>
