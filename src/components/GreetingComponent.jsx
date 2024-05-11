@@ -8,7 +8,7 @@ export default function GreetingComponent() {
     lg:content-center 
     lg:border
      lg:border-[#2b2b2b]
-    sm:hidden  w-[65%]  
+    sm:hidden  w-[85%]  
     m-[auto] 
      mt-12
      p-10
