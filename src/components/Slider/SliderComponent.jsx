@@ -5,9 +5,8 @@ export default function SliderComponet() {
   return (
     <>
       <div
-        className=" mx-auto grid  lg:grid-rows-1 lg:grid-cols-5
+        className=" mx-auto grid  lg:grid-rows-1 lg:grid-cols-6
        md:grid-cols-5 md:grid-rows-1  sm:grid-cols-4  sm:grid-rows-1 "
-      //  id="main-container"
       >
         <Track />
         <Track />
