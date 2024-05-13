@@ -11,8 +11,8 @@ const App = () => {
       <NavBarComponent />
       <div>
         <div className="flex">
-          <div className="w-[23%] bg-[rgba(13, 17, 23, 0)]  border-[0.5px] border-r-[#2b2b2b] ">
-            <SideBar />
+          <div className="w-[23%] bg-[rgba(13, 17, 23, 0)]  border-[0.5px] border-r-[#2b2b2b]">
+            <SideBar /> 
           </div>
           <div className="w-3/4  pl-5 space-y-3">
             <GreetingComponent />

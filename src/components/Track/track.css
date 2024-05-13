@@ -8,7 +8,7 @@
    border-radius: 5px;
 }
 #artwork{
-    border: 1px solid #64748B;
+    /* border: 0.5px solid #64748B; */
 }
 .track-container img {
     display: block;

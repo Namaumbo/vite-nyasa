@@ -16,7 +16,9 @@ export default function Track() {
         />
       </div>
       <div className="flex flex-col text-center ">
-        <span className=" text-gray-200 font-bolder">emtee</span>
+        <span className=" text-gray-200 font-bolder font-bold text-lg">
+          emtee
+        </span>
         <h4 className="text-[12px] text-slate-400 font-bold">Logan</h4>
       </div>
     </div>
