@@ -17,7 +17,7 @@ const App = () => {
           <div className="w-3/4  pl-5 space-y-3">
             <GreetingComponent />
             <div>
-              <div className="flex flex-row justify-between ">
+              <div className="flex flex-row justify-between px-2">
                 <h4 className=" tracking-tighter text-2xl font-bold text-gray-200">
                   NyasaBeats Tracks For You
                 </h4>
@@ -41,7 +41,7 @@ const App = () => {
             </div>
             <div>
               {/* Recommendations of the tracks */}
-              <div className="flex flex-row justify-between">
+              <div className="flex flex-row justify-between px-2">
                 <h4 className=" tracking-tighter text-2xl font-bold text-gray-200">
                   NyasaBeats Recommendations
                 </h4>
