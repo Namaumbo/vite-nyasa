@@ -1,30 +1,27 @@
 import * as ciIcons from "react-icons/ci";
 import * as fiIcons from "react-icons/fi";
-import {
-  Tag,
-  TagLabel,
-  Divider,
-} from "@chakra-ui/react";
+import { Tag, TagLabel, Divider } from "@chakra-ui/react";
+import "./siderbar.css"
 export default function SideBar() {
   const links = [
     {
       name: "Home",
-      icon: <ciIcons.CiHome fontSize={25} color="#4c566a" />,
+      icon: <ciIcons.CiHome fontSize={20} color="#4c566a" />,
       path: "/",
     },
     {
       name: "Albums",
-      icon: <fiIcons.FiDisc fontSize={25} color="#4c566a" />,
+      icon: <fiIcons.FiDisc fontSize={20} color="#4c566a" />,
       path: "/albums",
     },
     {
       name: "Studios",
-      icon: <fiIcons.FiSpeaker fontSize={25} color="#4c566a" />,
+      icon: <fiIcons.FiSpeaker fontSize={20} color="#4c566a" />,
       path: "/studios",
     },
     {
       name: "News",
-      icon: <fiIcons.FiPaperclip fontSize={25} color="#4c566a" />,
+      icon: <fiIcons.FiPaperclip fontSize={20} color="#4c566a" />,
       path: "/newsletter",
     },
   ];
@@ -55,14 +52,13 @@ export default function SideBar() {
     "Success",
     "Suffix",
     "Zenze",
-
-  ]
+  ];
   return (
     <div className=" max-h-full ">
       <ul className="list-none m-8">
         {links.map((item, index) => (
-          <li key={index} className="mb-5 flex flex-row  items-center ">
-            <div className=" pr-5">{item["icon"]}</div>
+          <li key={index} className="mb-5 flex flex-row  items-center " id="hovered-list">
+            <div className=" pr-3">{item["icon"]}</div>
             <div className=" font-bold text-[#cad2e0]">{item["name"]}</div>
           </li>
         ))}
