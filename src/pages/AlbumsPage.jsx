@@ -1,9 +1,12 @@
 import { Divider } from "@chakra-ui/react";
+import { BiLike } from "react-icons/bi";
+import { SlUserFollow } from "react-icons/sl";
+
 
 export default function AlbumPage() {
   const buttonClasses = "text-zinc-400 hover:text-white";
   const bgButtonClasses = "bg-zinc-700 text-white px-3 py-1 rounded-md";
-  const textGreenClasses = "text-green-500";
+  const textGreenClasses = "text-gray-500";
   return (
     <>
       <div className=" text-white p-4">
@@ -30,18 +33,11 @@ export default function AlbumPage() {
                 <img aria-hidden="true" alt="play" src="play.png" />
               </button>
               <button className={textGreenClasses}>
-                <img
-                  aria-hidden="true"
-                  alt="shuffle"
-                  src="https://placehold.co/40x40"
-                />
+              <BiLike  size='35px'/> 
               </button>
-              <button className={buttonClasses}>
-                <img
-                  aria-hidden="true"
-                  alt="more options"
-                  src="https://placehold.co/24x24"
-                />
+              <button className={textGreenClasses}>
+              <SlUserFollow size='25px' />
+
               </button>
             </div>
           </div>
@@ -54,20 +50,23 @@ export default function AlbumPage() {
                 <th className="text-left">Title</th>
                 <th className="text-left">Album</th>
                 <th className="text-left">Date added</th>
+                <th className="text-left">Duration</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr className="pt-12 ">
                 <td>1</td>
                 <td>Song Title 1</td>
                 <td>Album Name 1</td>
                 <td>Jan 1, 2023</td>
+                <td>3:21</td>
               </tr>
-              <tr>
+              <tr className="space-y-5">
                 <td>2</td>
                 <td>Song Title 2</td>
                 <td>Album Name 2</td>
                 <td>Jan 2, 2023</td>
+                <td>1:23</td>
               </tr>
             </tbody>
           </table>

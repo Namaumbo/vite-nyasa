@@ -71,9 +71,7 @@ export default function SideBar() {
           <Tag
             key={genre}
             variant="solid"
-            colorScheme="blue"
-            size="lg"
-            className="mr-2 mt-3 cursor-pointer"
+            className="mr-2 mt-3 cursor-pointer bg-green-500"
           >
             <TagLabel>{genre}</TagLabel>
           </Tag>
@@ -88,8 +86,6 @@ export default function SideBar() {
           <Tag
             key={genre}
             variant="solid"
-            colorScheme="orange"
-            size="lg"
             className="mr-2 mt-3 cursor-pointer"
           >
             <TagLabel>{genre}</TagLabel>
