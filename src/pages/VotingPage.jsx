@@ -17,7 +17,7 @@ export default function VotingPage() {
             <div className="flex items-center space-x-4">
               <img
                 alt="Candidate"
-                className="rounded-md"
+                className="rounded-md shadow-sm"
                 height={80}
                 src="photo2.jpg"
                 style={{
