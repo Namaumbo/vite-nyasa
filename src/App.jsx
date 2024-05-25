@@ -5,6 +5,7 @@ import SideBar from "./components/sidebar/SideBar";
 import SliderComponet from "./components/Slider/SliderComponent";
 import AlbumPage from "./pages/AlbumsPage";
 import VotingPage from "./pages/VotingPage";
+import MainComponent from "./pages/MainComponent";
 
 const App = () => {
   return (
@@ -13,12 +14,15 @@ const App = () => {
     
       <div>
         <div className="flex">
-          <div className="lg:w-[23%] lg:bg-[rgba(13, 17, 23, 0)]  lg:border-r-[0.5px] lg:border-r-[#2b2b2b] ">
+          <div className="lg:w-[23%] lg:bg-[rgba(13, 17, 23, 0)]  lg:border-r-[0.5px] lg:border-r-[#2b2b2b] md:w-[15%]">
             <SideBar />
           </div> 
           <div className="w-3/4  pl-5 space-y-3">
+          
 
-          <VotingPage/>
+            <MainComponent/>
+          {/* <VotingPage/> */}
+
           {/* <AlbumPage/> */}
            {/*  <GreetingComponent />
             <div>
@@ -30,7 +34,6 @@ const App = () => {
                   See all
                 </p>
               </div>
-              <SliderComponet />
             </div>
             <div> */}
               {/* New Releases */}

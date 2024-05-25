@@ -53,3 +53,21 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+/* sliderStyle.css */
+@keyframes fade {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+#fade-skeleton {
+  animation: fade 1.5s infinite;
+}
