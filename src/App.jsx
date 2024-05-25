@@ -4,6 +4,7 @@ import GreetingComponent from "./components/GreetingComponent";
 import SideBar from "./components/sidebar/SideBar";
 import SliderComponet from "./components/Slider/SliderComponent";
 import AlbumPage from "./pages/AlbumsPage";
+import VotingPage from "./pages/VotingPage";
 
 const App = () => {
   return (
@@ -16,7 +17,9 @@ const App = () => {
             <SideBar />
           </div> 
           <div className="w-3/4  pl-5 space-y-3">
-          <AlbumPage/>
+
+          <VotingPage/>
+          {/* <AlbumPage/> */}
            {/*  <GreetingComponent />
             <div>
               <div className="flex flex-row justify-between px-2">
