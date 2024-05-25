@@ -1,9 +1,13 @@
 import { Button } from "@chakra-ui/react";
 export default function VotingPage() {
+  const buttonClasses = "text-zinc-400 hover:text-white";
+  const bgButtonClasses = "bg-zinc-700 text-white px-3 py-1 rounded-md";
+  const textGreenClasses = "text-gray-500";
+  const tableItemClass = "pt-3 pb-3";
+
   return (
     <>
-     
-      <main className="flex flex-col items-center justify-center  bg-gray-100 bg-[#0d1117] py-12">
+      <main className="flex flex-col items-center justify-center  bg-gray-100 bg-[#0d1117] py-6">
         <div className="max-w-md w-full space-y-8 px- md:px-0">
           <div className="text-center">
             <h1 className="text-5xl font-bold text-gray-900 dark:text-gray-100">
@@ -37,9 +41,9 @@ export default function VotingPage() {
             </div>
             <div className="flex justify-between items-center">
               <p className="text-gray-600 dark:text-gray-400">
-                Total Votes : 
+                Total Votes :
                 <span className=" pl-1 font-bold text-gray-900 dark:text-gray-100">
-                   123
+                  123
                 </span>
               </p>
               <Button className="bg-blue-500 hover:bg-blue-600 w-[15rem] text-white font-bold py-2 px-6 rounded">
@@ -49,6 +53,38 @@ export default function VotingPage() {
           </div>
         </div>
       </main>
+      <h4 className=" tracking-tighter text-2xl font-bold text-gray-200">
+        More Music from John Doe
+      </h4>
+      <div className="mt-6">
+        <table className="w-full text-zinc-400">
+          <thead className="border-b">
+            <tr>
+              <th className="text-left">#</th>
+              <th className="text-left">Title</th>
+              <th className="text-left">Album</th>
+              <th className="text-left">Date added</th>
+              <th className="text-left">Duration</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="hover:bg-[#718096] cursor-pointer">
+              <td className={tableItemClass}>1</td>
+              <td className={tableItemClass}>Kuli bwanji </td>
+              <td className={tableItemClass}>Praise and Harmony</td>
+              <td className={tableItemClass}>Jan 1, 2023</td>
+              <td className={tableItemClass}>3:21</td>
+            </tr>
+            <tr className="hover:bg-[#718096] cursor-pointer">
+              <td className={tableItemClass}>2</td>
+              <td className={tableItemClass}>Days of Elijah</td>
+              <td className={tableItemClass}>Praise and Harmony</td>
+              <td className={tableItemClass}>Jan 1, 2023</td>
+              <td className={tableItemClass}>3:21</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </>
   );
 }
