@@ -10,7 +10,7 @@ const App = () => {
       <NavBarComponent />
       <div>
         <div className="flex">
-          <div className="lg:w-[23%] lg:bg-[rgba(13, 17, 23, 0)]  lg:border-r-[0.5px] lg:border-r-[#2b2b2b] md:hidden ">
+          <div className="lg:w-[23%] lg:bg-[rgba(13, 17, 23, 0)]  lg:border-r-[0.5px] lg:border-r-[#2b2b2b]">
             <SideBar />
           </div>
           <div className="w-3/4  pl-5 space-y-3">
