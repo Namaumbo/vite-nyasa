@@ -3,18 +3,21 @@ import NavBarComponent from "./components/navbar/NavBarComponet";
 import GreetingComponent from "./components/GreetingComponent";
 import SideBar from "./components/sidebar/SideBar";
 import SliderComponet from "./components/Slider/SliderComponent";
+import AlbumPage from "./pages/AlbumsPage";
 
 const App = () => {
   return (
     <>
       <NavBarComponent />
+    
       <div>
         <div className="flex">
           <div className="lg:w-[23%] lg:bg-[rgba(13, 17, 23, 0)]  lg:border-r-[0.5px] lg:border-r-[#2b2b2b]">
             <SideBar />
-          </div>
+          </div> 
           <div className="w-3/4  pl-5 space-y-3">
-            <GreetingComponent />
+          <AlbumPage/>
+           {/*  <GreetingComponent />
             <div>
               <div className="flex flex-row justify-between px-2">
                 <h4 className=" tracking-tighter text-2xl font-bold text-gray-200">
@@ -26,9 +29,9 @@ const App = () => {
               </div>
               <SliderComponet />
             </div>
-            <div>
+            <div> */}
               {/* New Releases */}
-              <div className="flex flex-row justify-between px-2">
+              {/* <div className="flex flex-row justify-between px-2">
                 <h4 className=" tracking-tighter text-2xl font-bold text-gray-200">
                   New Releases
                 </h4>
@@ -38,9 +41,9 @@ const App = () => {
               </div>
               <SliderComponet />
             </div>
-            <div>
+            <div> */}
               {/* Recommendations of the tracks */}
-              <div className="flex flex-row justify-between px-2">
+              {/* <div className="flex flex-row justify-between px-2">
                 <h4 className=" tracking-tighter text-2xl font-bold text-gray-200">
                   NyasaBeats Recommendations
                 </h4>
@@ -49,9 +52,9 @@ const App = () => {
                 </p>
               </div>
               <SliderComponet />
-            </div>
+            </div>*/}
           </div>
-        </div>
+        </div> 
       </div>
     </>
   );
