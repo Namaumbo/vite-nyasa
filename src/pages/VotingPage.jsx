@@ -1,13 +1,11 @@
 import { Button } from "@chakra-ui/react";
 export default function VotingPage() {
-  const buttonClasses = "text-zinc-400 hover:text-white";
-  const bgButtonClasses = "bg-zinc-700 text-white px-3 py-1 rounded-md";
-  const textGreenClasses = "text-gray-500";
+
   const tableItemClass = "pt-3 pb-3";
 
   return (
     <>
-      <main className="flex flex-col items-center justify-center  bg-gray-100 bg-[#0d1117] py-6">
+      <main className="flex flex-col items-center justify-center  bg-[#0d1117] py-6">
         <div className="max-w-md w-full space-y-8 px- md:px-0">
           <div className="text-center">
             <h1 className="text-5xl font-bold text-gray-900 dark:text-gray-100">
@@ -68,14 +66,14 @@ export default function VotingPage() {
             </tr>
           </thead>
           <tbody>
-            <tr className="hover:bg-[#718096] cursor-pointer">
+            <tr className="hover:bg-gray-800 cursor-pointer">
               <td className={tableItemClass}>1</td>
               <td className={tableItemClass}>Kuli bwanji </td>
               <td className={tableItemClass}>Praise and Harmony</td>
               <td className={tableItemClass}>Jan 1, 2023</td>
               <td className={tableItemClass}>3:21</td>
             </tr>
-            <tr className="hover:bg-[#718096] cursor-pointer">
+            <tr className="hover:bg-gray-800 cursor-pointer">
               <td className={tableItemClass}>2</td>
               <td className={tableItemClass}>Days of Elijah</td>
               <td className={tableItemClass}>Praise and Harmony</td>
