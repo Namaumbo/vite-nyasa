@@ -17,9 +17,9 @@ const App = () => {
             <SideBar />
           </div> 
           <div className="w-3/4  pl-5 space-y-3">
-          <SliderComponet />
+          {/* <SliderComponet /> */}
 
-          {/* <VotingPage/> */}
+          <VotingPage/>
           {/* <AlbumPage/> */}
            {/*  <GreetingComponent />
             <div>

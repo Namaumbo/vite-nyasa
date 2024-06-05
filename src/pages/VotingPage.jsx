@@ -9,14 +9,14 @@ export default function VotingPage() {
       <main className="flex flex-col items-center justify-center  bg-[#0d1117] py-6">
         <div className="max-w-md w-full space-y-8 px- md:px-0">
           <div className="text-center">
-            <h1 className="text-5xl font-bold text-gray-900 dark:text-gray-100">
+            <h1 className="text-5xl font-bold text-gray-100 dark:text-gray-100">
               Vote for The Audio Track
             </h1>
-            <p className="mt-4 text-lg text-gray-600 w-[20rem] m-[auto] dark:text-gray-400">
+            <p className="mt-4 text-lg text-gray-100 w-[20rem] m-[auto] dark:text-gray-400">
               Cast your vote to support the artist for the music shoot out.
             </p>
           </div>
-          <div className=" dark:bg-gray-800 rounded-lg shadow-md p-6 space-y-6">
+          <div className=" bg-gray-900 rounded-lg shadow-md p-6 space-y-6">
             <div className="flex items-center space-x-4">
               <img
                 alt="Candidate"
@@ -30,10 +30,10 @@ export default function VotingPage() {
                 width={150}
               />
               <div>
-                <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">
+                <h2 className="text-xl font-bold text-gray-100 dark:text-gray-100">
                   John Doe
                 </h2>
-                <p className="text-gray-600 dark:text-gray-400">
+                <p className="text-gray-100 dark:text-gray-400">
                   Candidate for City Council
                 </p>
               </div>
@@ -41,7 +41,7 @@ export default function VotingPage() {
             <div className="flex justify-between items-center">
               <p className="text-gray-600 dark:text-gray-400">
                 Total Votes :
-                <span className=" pl-1 font-bold text-gray-900 dark:text-gray-100">
+                <span className=" pl-1 font-bold text-gray-100 dark:text-gray-100">
                   123
                 </span>
               </p>
