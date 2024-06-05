@@ -1,8 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { Button } from "@chakra-ui/react";
 export default function VotingPage() {
-  const bgButtonClasses = "bg-zinc-700 text-white px-3 py-1 rounded-md";
-  const textGreenClasses = "text-gray-500";
+
   const tableItemClass = "pt-3 pb-3";
 
   return (
