@@ -1,6 +1,5 @@
 import * as ciIcons from "react-icons/ci";
 import * as fiIcons from "react-icons/fi";
-import { Tag, TagLabel, Divider } from "@chakra-ui/react";
 import "./siderbar.css";
 import { NavLink } from "react-router-dom";
 
@@ -8,22 +7,22 @@ export default function SideBar() {
   const links = [
     {
       name: "Home",
-      icon: <ciIcons.CiHome fontSize={20} color="#4c566a" />,
+      icon: <ciIcons.CiHome fontSize={20} color="#ffffff" />,
       path: "/",
     },
     {
       name: "Albums",
-      icon: <fiIcons.FiDisc fontSize={20} color="#4c566a" />,
+      icon: <fiIcons.FiDisc fontSize={20} color="#ffffff" />,
       path: "/albums",
     },
     {
       name: "Studios",
-      icon: <fiIcons.FiSpeaker fontSize={20} color="#4c566a" />,
+      icon: <fiIcons.FiSpeaker fontSize={20} color="#ffffff" />,
       path: "/studios",
     },
     {
       name: "News",
-      icon: <fiIcons.FiPaperclip fontSize={20} color="#4c566a" />,
+      icon: <fiIcons.FiPaperclip fontSize={20} color="#ffffff" />,
       path: "/newsletter",
     },
   ];
@@ -56,19 +55,20 @@ export default function SideBar() {
     "Zenze",
   ];
   return (
-    <div className=" max-h-full ">
+    <div className=" bg-black border-1 h-full pt-5">
+      <h2 className="text-lg font-bold text-white ml-3">Self Space</h2>
       <ul>
         {links.map((link) => {
           return (
-            <NavLink to={link["path"]}>
+            <NavLink to={link["path"]} key={link["name"]}>
               <li
                 key={link["name"]}
-                className="mb-5 flex flex-row  items-center "
+                className=" flex flex-row  items-center "
                 id="hovered-list"
               >
                 <div className="flex flex-row  justify-center items-center">
                   <div className=" pr-3">{link["icon"]}</div>
-                  <div className=" text-[#cad2e0]">{link["name"]}</div>
+                  <div className=" text-[#ffffff]">{link["name"]}</div>
                 </div>
               </li>
             </NavLink>
