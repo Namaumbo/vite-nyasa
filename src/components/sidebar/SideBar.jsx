@@ -55,7 +55,7 @@ export default function SideBar() {
     "Zenze",
   ];
   return (
-    <div className=" bg-black border-1 h-full pt-5">
+    <div className=" bg-[#0e0e0f] border-1 h-full pt-5">
       <h2 className="text-lg font-bold text-white ml-3">Self Space</h2>
       <ul>
         {links.map((link) => {
@@ -66,9 +66,9 @@ export default function SideBar() {
                 className=" flex flex-row  items-center "
                 id="hovered-list"
               >
-                <div className="flex flex-row  justify-center items-center">
+                <div className="flex flex-row  justify-center items-center ml-[5px]">
                   <div className=" pr-3">{link["icon"]}</div>
-                  <div className=" text-[#ffffff]">{link["name"]}</div>
+                  <div className=" text-[#ffffff] text-sm">{link["name"]}</div>
                 </div>
               </li>
             </NavLink>

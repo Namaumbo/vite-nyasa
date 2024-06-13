@@ -8,14 +8,11 @@ export default function HomePage(params) {
           <div className="flex space-x-2">
             <button className="px-4 py-2 bg-zinc-800 rounded">All</button>
             <button className="px-4 py-2 bg-zinc-800 rounded">Music</button>
-            <button className="px-4 py-2 bg-zinc-800 rounded">Podcasts</button>
+            <button className="px-4 py-2 bg-zinc-800 rounded">Genres</button>
           </div>
           <div>
             <button className="px-4 py-2 bg-yellow-500 rounded">
-              Explore Premium
-            </button>
-            <button className="px-4 py-2 bg-zinc-800 rounded">
-              Install App
+              More Information
             </button>
           </div>
         </div>
@@ -23,7 +20,6 @@ export default function HomePage(params) {
           <h2 className="text-xl font-bold mb-4">Recently played</h2>
 
           <SliderComponet />
-         
         </div>
 
         <div className="mt-8">

@@ -1,6 +1,6 @@
 export default function NavBarComponent() {
   return (
-    <nav className="border-b-0.5 flex flex-row align-baseline items-center  border-[#2b2b2b]">
+    <nav className=" border-b-0.5 flex flex-row align-baseline items-center  border-[#2b2b2b]">
       <div className="w-1/4">
         <img src="/logo-final.png" className="w-28 " alt="logo" />
       </div>
