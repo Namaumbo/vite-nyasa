@@ -55,7 +55,7 @@ export default function SideBar() {
     "Zenze",
   ];
   return (
-    <div className=" bg-[#0e0e0f] border-1 h-full pt-5">
+    <div className=" bg-[#131314] border-1 h-full pt-5">
       <h2 className="text-lg font-bold text-white ml-3">Self Space</h2>
       <ul>
         {links.map((link) => {
