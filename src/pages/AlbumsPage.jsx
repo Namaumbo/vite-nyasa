@@ -1,23 +1,16 @@
+import AlbumComponent from "../components/album/AlbumComponent";
+
 export default function AlbumPage() {
   return (
-    <>
-      <div className="relative w-[250px] h-[250px]">
-        <img
-          src="photo2.jpg"
-          alt="Image 1"
-          className="absolute w-full h-full top-0 z-30"
-        />
-        <img
-          src="logo-final.png"
-          alt="Image 2"
-          className="absolute  w-full h-full  top-2 z-20"
-        />
-        <img
-          src="photo2.jpg"
-          alt="Image 3"
-          className="absolute  w-full h-full  top-4 z-10"
-        />
+ 
+    <div
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 p-4 bg-zinc-100 dark:bg-zinc-900 "
+      >
+      {[1, 2, 3, 4, 5].map((album) => {
+           return <AlbumComponent />;
+         })}
+      
+        
       </div>
-    </>
   );
 }

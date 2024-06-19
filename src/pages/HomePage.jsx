@@ -27,6 +27,7 @@ export default function HomePage(params) {
 
           <SliderComponet />
         </div>
+
       </div>
     </div>
   );
