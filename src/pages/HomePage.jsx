@@ -18,7 +18,6 @@ export default function HomePage(params) {
         </div>
         <div>
           <h2 className="text-xl font-bold mb-4">Recently played</h2>
-
           <SliderComponet />
         </div>
 

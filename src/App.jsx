@@ -3,7 +3,6 @@ import "./App.css";
 import NavBarComponent from "./components/navbar/NavBarComponet";
 import GreetingComponent from "./components/GreetingComponent";
 import SideBar from "./components/sidebar/SideBar";
-import SliderComponet from "./components/Slider/SliderComponent";
 import AlbumPage from "./pages/AlbumsPage";
 import VotingPage from "./pages/VotingPage";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
