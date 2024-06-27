@@ -31,7 +31,7 @@ export default function SideBar() {
   return (
     <div className=" bg-[#131314] border-1 h-full pt-5">
       <h2 className="text-lg font-bold text-white ml-3">Self Space</h2>
-      <ul>
+      <ul className="mt-4">
         {links.map((link) => {
           return (
             <NavLink to={link["path"]} key={link["name"]}>

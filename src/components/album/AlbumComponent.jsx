@@ -3,9 +3,9 @@ export default function AlbumComponent() {
   return (
     <div className=" flex justify-center border-t-4 w-[12.5rem] rounded-lg border-[#8a7a61]">
       <div className=" flex justify-center border-t-4 w-[14rem] rounded-lg border-[#648594]">
-        <div className="w-[15rem] rounded overflow-hidden shadow-lg bg-white dark:bg-zinc-800">
+        <div className="w-[15rem] rounded overflow-hidden shadow-lg bg-white dark:bg-zinc-800 hover:bg-black hover:pointer" >
           <div className="relative">
-            <img className="object-cover h-auto w-full rounded-md shadow-md" src="photo2.jpg" alt="Video Thumbnail" />
+            <img className="object-cover h-auto w-full rounded-sm shadow-md" src="photo2.jpg" alt="Video Thumbnail" />
             <div className="absolute bottom-6  top-[-1rem] left-[-1rem]  bg-opacity-50 text-black text-xs px-1 ">
               <img className="w-[7rem]" src="logo-final.png" alt="Logo" />
             </div>
